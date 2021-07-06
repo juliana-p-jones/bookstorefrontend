@@ -23,7 +23,7 @@
       <td><img src="assets/{{book.image}}.jpeg"class="img-responsive"></td>
       <td>{{book.name}}</td>
       <td>{{book.description}}</td>
-      <td>{{book.price}}</td>
+      <td>{{book.price | currency:'USD'}}</td>
       <td> <button class="btn btn-primary" (click)="viewBook(book.id)">View Details</button></td>
     </tr>
   </tbody>
