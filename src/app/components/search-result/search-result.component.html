@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 id="header">Search Results:</h1>
+<table id="table" class="table table-striped">
+  <thead>
+    <tr>
+        <th scope="col">Image:</th>
+      <th scope="col">Title:</th>
+      <th scope="col">Description:</th>
+      <th scope="col">Price:</th>
+      <th scope="col">View:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td><img src="assets/{{book.image}}.jpeg"class="img-responsive"></td>
+      <td>{{book.name}}</td>
+      <td>{{book.description}}</td>
+      <td>{{book.price}}</td>
+      <td> <button class="btn btn-primary" (click)="viewBook(book.id)">View Details</button></td>
+    </tr>
+  </tbody>
+</table>
+{{ collapseTable() }}
+<div id="notFound"></div>
+<button class="btn btn-primary" id="back" (click)="backButton()">Back</button>
+
+  </div>

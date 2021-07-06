@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+    <h1 id="header">The Book Nook:</h1>
+    </div>
+    <div id="slogan" class ="col-6">
+      <img class="img-responsive" src="assets/libb.png"><br><br>
+      <p>"A book is a device to the imagination."</p>
+    </div>
+    </div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+        <th scope="col">Image:</th>
+      <th scope="col">Title:</th>
+      <th scope="col">Description:</th>
+      <th scope="col">Price:</th>
+      <th scope="col">View:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td><img src="assets/{{book.image}}.jpeg"class="img-responsive"></td>
+      <td>{{book.name}}</td>
+      <td>{{book.description}}</td>
+      <td>{{book.price}}</td>
+      <td> <button class="btn btn-primary" (click)="viewBook(book.id)">View Details</button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+

@@ -1,0 +1,48 @@
+<div class="container">
+    <div>
+    <h2>{{book.name}} Details:</h2>
+    <br>
+    <div id="pics">
+        <img src="assets/{{book.image}}.jpeg" class="img-responsive">
+        </div>
+        <div>
+            <br>
+            <button class="btn btn-primary" id="back" (click)="backButton()">Back</button>
+            <br>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Title:</th>
+                <td>{{book.name}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Description:</th>
+                <td>{{book.description}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Price:</th>
+                <td>{{book.price}}</td>
+            </tr>
+            <tr>
+                <th scope="col">SKU:</th>
+                <td>{{book.sku}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Active:</th>
+                <td>{{book.active| yesNo}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Stock</th>
+                <td>{{book.stock}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Category:</th>
+                <td>{{ getCategoryName(book.categoryId) }}</td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+            
+</div>

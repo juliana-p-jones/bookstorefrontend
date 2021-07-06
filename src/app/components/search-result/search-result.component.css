@@ -1,0 +1,12 @@
+.img-responsive{
+    max-width: 65%;
+}
+.btn{
+    margin-left: 10%;
+    background-color: crimson;
+    border:crimson;
+}
+.container{
+
+    margin-bottom: 5%;
+}

@@ -1,0 +1,29 @@
+.btn{
+    background-color: darkgoldenrod;
+    color: white;
+}
+.form-inline{
+    margin-left:1%;
+    padding-top:1%;
+    margin-top:1%;
+    padding-bottom:1%;
+}
+
+.img-responsive{
+    max-width: 10%;
+}
+.container{
+    background-color: wheat;
+}
+#bookIcon{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+#home{
+       display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    float:right;
+}
